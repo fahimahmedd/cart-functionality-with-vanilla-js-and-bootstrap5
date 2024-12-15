@@ -13,6 +13,7 @@ This project is a fully responsive web application designed to display product d
 
 - Vanilla JavaScript: For interactive functionalities and DOM manipulation.
 - Bootstrap 5: To ensure a mobile-first and responsive layout with modern UI components.
+- SCSS: Enables modular and flexible styling with advanced CSS capabilities.
 - HTML5 & CSS3: For the fundamental structure and styling.
 
 ## Live Preview 🌐
