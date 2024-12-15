@@ -19,7 +19,7 @@ This project is a fully responsive web application designed to display product d
 
 Experience the project live: [**View Demo**](https://cart-vanilla-js.netlify.app/)
 
-## Another Version Available 🌀
+## VueJs-3 Version Available 🌀
 
 Also have an enhanced version of this project built with Vue.js 3 Composition API and Tailwind CSS! Check it out here: [Vue.js Version Repository](https://github.com/fahimahmedd/cart-functionality-with-vue-js-and-tailwindcss)
 
