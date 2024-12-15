@@ -1,0 +1,43 @@
+
+@mixin text-ellips {
+    display: block; 
+    display: -webkit-box;
+    height: 1; 
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  @mixin c-button {
+    padding: 8px 24px;       
+    border-radius: 4px;       
+    background-color: $primaryColor;
+    color: $white;             
+    display: inline-block;       
+    cursor: pointer;        
+    &:hover{
+     background-color: $hoverPrimary;
+    }
+  }
+
+  @mixin d-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin d-align-center{
+    display: flex;
+    align-items: center;
+  }
+
+  @mixin after{
+    position: absolute; 
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }

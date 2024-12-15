@@ -1,0 +1,29 @@
+@media (min-width: 180px) and (max-width: 991.98px){
+    .product-detail {
+        min-height: auto;
+        padding: 16px 0 80px 0 !important;
+    }
+    .product-block {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .product-title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .cart-modal .modal-content {
+        padding: 0px;
+    }
+    .cart-modal-table th {
+        font-size: 13px;
+    }
+    .cart-modal-table td {
+        font-size: 13px;
+    }
+}
+@media (min-width: 767px) and (max-width: 991.98px){
+    .product-detail {
+        min-height: 100vh;
+        padding: 16px 0 80px 0 !important;
+    }
+}

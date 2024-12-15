@@ -1,0 +1,283 @@
+.product-detail {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.product-thumbnail {
+  img {
+    border-radius: 12px;
+  }
+}
+.product-block {
+  padding-left: 20px;
+}
+.product-review-box {
+  @include d-align-center;
+  ion-icon {
+    color: #ffd200;
+    margin-right: 3px;
+    font-size: 18px;
+  }
+  span {
+    font-size: 14px;
+    color: #677383;
+    line-height: 0px;
+    font-weight: 300;
+    margin-left: 5px;
+  }
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  .prev-price {
+    color: $textColor;
+    font-size: 18px;
+    text-decoration: line-through;
+    text-decoration-color: #8694a5fd;
+    text-decoration-thickness: 1px;
+  }
+  .new-price {
+    color: $primaryColor;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+}
+
+.product-description {
+  .description-item {
+    margin-right: 30px;
+    .type-title {
+      font-size: 14px;
+      color: $textColor;
+      font-weight: 400;
+    }
+  }
+}
+
+.product-color {
+  padding: 10px 0;
+  .color-box {
+    display: flex;
+    .form-check {
+      position: relative;
+      padding-left: 0px;
+      padding-right: 10px;
+      .form-check-label {
+        @include d-center;
+      }
+      .form-check-label span {
+        display: block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+      }
+    }
+
+    .form-check-input {
+      display: none;
+    }
+
+    .form-check-label {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border 0.3s ease, transform 0.2s ease;
+    }
+
+    .form-check-input:checked + .form-check-label {
+      border: 2px solid currentColor;
+      transform: scale(1.1);
+    }
+  }
+}
+#purple + .form-check-label {
+  color: #816bff;
+}
+
+#accent + .form-check-label {
+  color: #1fcec9;
+}
+
+#blue + .form-check-label {
+  color: #4b97d3;
+}
+
+#black + .form-check-label {
+  color: #3b4747;
+}
+
+.product-size {
+  padding: 10px 0;
+}
+.size-box {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 4px;
+  .form-check {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .form-check-input {
+    display: none;
+  }
+  .form-check-label {
+    display: inline-block;
+    width: 76px;
+    height: 35px;
+    border: 1.5px solid #dbdfea;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.3s ease, transform 0.2s ease;
+    @include d-center;
+    font-size: 14px;
+    color: $textColor;
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      color: #364a63;
+      margin-right: 10px;
+    }
+  }
+
+  .form-check-input:checked + .form-check-label {
+    border: 1.5px solid $primaryColor;
+  }
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  .qty-input-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .product-qty,
+    .qty-count {
+      background: transparent;
+      color: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      border: none;
+      display: inline-block;
+      min-width: 0;
+      height: 2.5rem;
+      line-height: 1;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .product-qty {
+      width: 50px;
+      min-width: 0;
+      display: inline-block;
+      text-align: center;
+      appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+    }
+
+    .qty-count {
+      padding: 0;
+      cursor: pointer;
+      width: 2.5rem;
+      font-size: 1.25em;
+      text-indent: -100px;
+      overflow: hidden;
+      position: relative;
+      color: #8091a7;
+
+      &:before,
+      &:after {
+        content: "";
+        height: 2px;
+        width: 10px;
+        position: absolute;
+        display: block;
+        background: #8091a7;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      &--minus {
+        border-right: 1px solid #dbdfea;
+      }
+      &--add {
+        border-left: 1px solid #dbdfea;
+        &:after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .c-button {
+    @include c-button;
+  }
+
+  .qty-input-container {
+    border-radius: 4px;
+    border: 1px solid #dbdfea;
+  }
+}
+
+.favourite-listing {
+  ion-icon {
+    font-size: 28px;
+    color: $primaryColor;
+    cursor: pointer;
+  }
+}
+
+.checkout-sticky {
+  padding: 7px 22px;
+  border-radius: 35px;
+  background-color: $secondaryColor;
+  box-shadow: $boxShadow;
+  font-size: 15px;
+  color: #364a63;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all linear 1m;
+  opacity: 0;
+  ion-icon {
+    font-size: 22px;
+  }
+  &:hover {
+    background-color: $hoverSecondary;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 0px;
+    height: 22px;
+    width: 22px;
+    background-color: $white;
+    border-radius: 4px;
+    @include d-center;
+    margin-left: 3px;
+  }
+}
