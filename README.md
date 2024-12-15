@@ -18,7 +18,8 @@ This project is a fully responsive web application designed to display product d
 
 ## Live Preview 🌐
 
-Experience the project live: [**View Demo**](https://cart-vanilla-js.netlify.app/)
+Experience the project live: [**View Demo**](https://cart-vue-js.netlify.app/){:target="_blank"}
+
 
 ## VueJs-3 Version Available 🌀
 
